@@ -1,0 +1,27 @@
+# Navigation -------------------------------------------------------
+alias ..='cd ..'
+alias ...='cd .. ; cd ..'
+
+# Listings  ----------------------------------------------------
+alias ll='ls -hl'
+alias la='ls -a'
+alias lla='ls -lah'
+
+# Git --------------------------------------------------------
+alias g='git status'
+
+# Misc
+alias g='grep -i'  # Case insensitive grep
+alias f='find . -iname'
+alias ducks='du -cksh * | sort -rn|head -11' # Lists folders and files sizes in the current folder
+alias top='top -o cpu'
+alias systail='tail -f /var/log/system.log'
+alias m='more'
+alias df='df -h'
+
+# Shows most used commands, cool script I got this from: http://lifehacker.com/software/how-to/turbocharge-your-terminal-274317.php
+alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' | sort | uniq -c | sort -n | tail -n 20 | sort -nr"
+
+# Aliases ----------------------------------------
+alias reload='source ~/dotfiles/bash/aliases'
+alias ea='vim ~/dotfiles/bash/aliases'
