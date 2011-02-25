@@ -11,7 +11,7 @@ export EDITOR=vim
 
 # Prompts ----------------------------------------------------------
 #export PS1="\[${COLOR_GREEN}\]\w > \[${COLOR_NC}\]"  # Primary prompt with only a path
-export PS1="\[${COLOR_PURPLE}\]\u@\h \[${COLOR_LIGHT_PURPLE}\]\w > \[${COLOR_NC}\]"  # Primary prompt with user, host, and path 
+export PS1="\[${COLOR_PURPLE}\]\u@\h \[${COLOR_LIGHT_PURPLE}\]\w \[${COLOR_NC}\] \n$ "  # Primary prompt with user, host, and path 
 
 # This runs before the prompt and sets the title of the xterm* window.  If you set the title in the prompt
 # weird wrapping errors occur on some systems, so this method is superior
