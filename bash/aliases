@@ -25,3 +25,8 @@ alias profileme="history | awk '{print \$2}' | awk 'BEGIN{FS=\"|\"}{print \$1}' 
 # Aliases ----------------------------------------
 alias reload='source ~/dotfiles/bash/aliases'
 alias ea='vim ~/dotfiles/bash/aliases'
+
+# Searches ---------------------------------------
+alias rgrep='find . -type f -print0 | xargs -0 grep --color=auto -i -n'
+
+

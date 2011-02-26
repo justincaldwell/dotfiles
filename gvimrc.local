@@ -1,3 +1,8 @@
 " Customizations for gvim / mvim to override janus
 
 color molokai
+
+" Create some easy window focus shorcuts
+
+:map  <Leader>]  <C-W>w
+:map  <Leader>[  <C-W>W
