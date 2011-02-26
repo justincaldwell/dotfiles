@@ -1,6 +1,6 @@
-desc "link dotfiles from root home directory"
+desc "Link dotfiles from root home"
 task :link_root_dotfiles do
-  %w[ bashrc bash_profile ].each do |file|
+  %w[ bashrc bash_profile gvimrc.local vimrc.local gemrc ].each do |file|
     dest = File.expand_path("~/.#{file}")
     unless File.symlink?(dest) || File.exists?(dest)
       ln_s(File.expand_path("../#{file}", __FILE__), dest)
