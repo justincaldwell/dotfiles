@@ -9,9 +9,14 @@ alias lla='ls -lah'
 
 # Git --------------------------------------------------------
 alias g='git status'
+alias gc='git commit -m'
+alias gca='git commit -a -m'
+alias gd='git diff'
+alias gcaa='git commit -a --amend -C HEAD'
+alias gr='git reset --hard'
+alias ga='git add'
 
 # Misc
-alias g='grep -i'  # Case insensitive grep
 alias f='find . -iname'
 alias ducks='du -cksh * | sort -rn|head -11' # Lists folders and files sizes in the current folder
 alias top='top -o cpu'
