@@ -1,5 +1,5 @@
 # Path and all that
-export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/usr/X11/bin:/Users/justin/.rvm/bin
+export PATH=/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/sbin:/usr/sbin:/usr/X11/bin:/Users/justin/.rvm/bin
 
 # Include script files
 . ~/dotfiles/bash/z.sh
