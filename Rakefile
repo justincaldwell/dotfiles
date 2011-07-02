@@ -1,6 +1,6 @@
 desc "Link dotfiles from root home"
 task :link_root_dotfiles do
-  files = %w[ bashrc bash_profile gvimrc.local vimrc.local gemrc irbrc gitconfig rvmrc ]
+  files = %w[ bashrc bash_profile gvimrc.local vimrc.local gemrc irbrc gitconfig rvmrc janus.rake]
   files.each do |file|
     dest = File.expand_path("~/.#{file}")
     if !File.symlink?(dest) && File.exists?(dest)
